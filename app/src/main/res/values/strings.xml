@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NanodegreePortfolio</string>
+    <string name="action_settings">Settings</string>
+    <string name="textTitle">My Killer Nanodegree Apps !</string>
+    <string name="buttonPopularMovies">Popular Movies</string>
+    <string name="buttonStockHawk">Stock Hawk</string>
+    <string name="buttonBuildItBigger">Build It Bigger</string>
+    <string name="buttonMakeYourAppMaterial">Make Your App Material</string>
+    <string name="buttonGoUbiquitous">Go Ubiquitous</string>
+    <string name="buttonCapstone">Capstone</string>
+</resources>
