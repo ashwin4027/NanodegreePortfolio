@@ -14,12 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button popularMovies;
-    Button stockHawk;
-    Button buildItBigger;
-    Button makeYourAppMaterial;
-    Button goUbiquitous;
-    Button capstone;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,69 +23,36 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        popularMovies= (Button) findViewById(R.id.buttonPopularMovies);
-        popularMovies.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
+
+
+
+
+    }
+
+    public void buttonClick(View view)
+    {
+        switch(view.getId())
+        {
+            case R.id.buttonPopularMovies:
                 displayToast("Come back on Aug 21st to launch PopularMovies 1.0");
-            }
-        });
-
-        stockHawk= (Button) findViewById(R.id.buttonStockHawk);
-        stockHawk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
+                break;
+            case R.id.buttonStockHawk:
                 displayToast("Come back on December 4th to launch StockHawk");
-
-
-            }
-        });
-
-        buildItBigger= (Button) findViewById(R.id.buttonBuildItBigger);
-        buildItBigger.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
+                break;
+            case R.id.buttonBuildItBigger:
                 displayToast("We are going to Build It Bigger on February 27th ");
-
-            }
-        });
-
-        makeYourAppMaterial= (Button) findViewById(R.id.buttonMakeYourAppMaterial);
-        makeYourAppMaterial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                displayToast("My App Material will be ready by May 1st");
-
-            }
-        });
-
-        goUbiquitous= (Button) findViewById(R.id.buttonGoUbiquitous);
-        goUbiquitous.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
+                break;
+            case R.id.buttonMakeYourAppMaterial:
+                displayToast("My App material will be made by May 1st");
+                break;
+            case R.id.buttonGoUbiquitous:
                 displayToast(" We'll Go Ubiquitous on  May 29th");
-
-            }
-        });
-
-        capstone= (Button) findViewById(R.id.buttonCapstone);
-        capstone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
+                break;
+            case R.id.buttonCapstone:
                 displayToast("We'll top it all off with Capstone on July 17th ");
-
-            }
-        });
-
-
-
-
+                break;
+        }
     }
 
     private void displayToast(String toastMessage) {

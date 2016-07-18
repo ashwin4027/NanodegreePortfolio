@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,74 +13,62 @@
     tools:showIn="@layout/activity_main"
     android:background="#ffffff">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textTitle"
         android:id="@+id/title"
-        android:textSize="20dp"
+        android:textSize="@dimen/title_text_size"
         android:textColor="#050404"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="@dimen/margin_top"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        style="@style/Custom_Button_Style"
         android:text="@string/buttonPopularMovies"
         android:id="@+id/buttonPopularMovies"
         android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:background="#0083be" />
+        android:layout_marginTop="@dimen/margin_top_title"
+         />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        style="@style/Custom_Button_Style"
         android:text="@string/buttonStockHawk"
         android:id="@+id/buttonStockHawk"
-        android:layout_marginTop="15dp"
         android:layout_below="@+id/buttonPopularMovies"
-        android:layout_centerHorizontal="true"
-        android:background="#0083be" />
+         />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        style="@style/Custom_Button_Style"
         android:text="@string/buttonBuildItBigger"
         android:id="@+id/buttonBuildItBigger"
         android:layout_below="@+id/buttonStockHawk"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:background="#0083be" />
+         />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        style="@style/Custom_Button_Style"
         android:text="@string/buttonMakeYourAppMaterial"
         android:id="@+id/buttonMakeYourAppMaterial"
         android:layout_below="@+id/buttonBuildItBigger"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:background="#0083be" />
+         />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        style="@style/Custom_Button_Style"
         android:text="@string/buttonGoUbiquitous"
         android:id="@+id/buttonGoUbiquitous"
         android:layout_below="@+id/buttonMakeYourAppMaterial"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:background="#0083be" />
+         />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        style="@style/Custom_Button_Style"
         android:text="@string/buttonCapstone"
         android:id="@+id/buttonCapstone"
         android:layout_below="@+id/buttonGoUbiquitous"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:background="#0083be" />
+        />
 </RelativeLayout>
+</ScrollView>
